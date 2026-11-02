@@ -1,0 +1,100 @@
+header, nav, main, footer, form{
+	
+	font-family: verdana;
+
+}
+figure img{
+	width: 100%;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+header{
+	grid-area: he;
+	background-image: url(img/flaco.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100px;
+	display: flex;
+			
+		
+	
+}
+header figure{
+	flex: 1;
+	margin: 0;
+	padding: 0;
+}
+header h1{
+	flex: 8;
+	text-align: center;
+	font-family: verdana;
+	font-size: 4vw;
+}
+nav{
+	grid-area: na;
+	background-color: #F5C2E3;
+}
+nav ul, footer ul{
+	display: flex;
+	justify-content: center;
+}
+nav ul li, footer ul li{
+	margin-right: 10%;
+
+}
+nav a, footer a{
+	color: #000;
+	font-family: verdana;
+}
+nav a:hover, footer a:hover{
+	color: #DE3FA7;
+}
+main{
+	grid-area: ma;
+	background-color: #E773BF;
+}
+footer{
+	grid-area: foo;
+	background-color: #F5C2E3;
+}
+form{
+	grid-area: fo;
+	background-color: #F5C2E3;
+}
+form fieldset{
+	display: inline-flex;
+	flex-wrap: wrap;
+	width: 35%;
+	margin: 1%;
+	padding: 0;
+	border: none;
+}
+form fieldset label, form fieldset input{
+	flex: 1;
+	min-width: 150px;
+}
+form button{
+	display: block;
+	margin: 2%;
+	padding: 1%;
+	width: 100px;
+	background-color: #E773BF;
+	font-weight: bold;
+}
+form button:hover{
+	font-size: 2vw;
+}
+body{
+	display: grid;
+	grid-template-columns: 50% auto;
+	grid-template-areas: 
+	'he he'
+	'na na'
+	'ma ma'
+	'foo fo'
+	;
+}

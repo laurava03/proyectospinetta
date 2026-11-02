@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Index</title>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<style>
+		header, nav, main, aside, footer, form{
+			font-family: verdana;
+		}
+		nav{
+			grid-area: na;
+			background-color: #F5C2E3;
+		}
+		main{
+			grid-area: ma;
+			background-color: #E773BF;
+			text-align: justify;
+			font-family: verdana;
+			padding: 5%;
+		}
+		aside{
+			grid-area: a;	
+		}
+		aside figure{
+			margin: 0;
+			padding: 0;
+		}
+		
+		body{
+			display: grid;
+			grid-template-columns: auto auto;
+			grid-template-areas: 
+			'he he'
+			'na na'
+			'ma a'
+			'foo fo'
+			;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Todo sobre "el Flaco"</h1>
+		
+	</header>
+	<nav>
+		<ul>
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="noticias.html">Noticias</a></li>
+			<li><a href="galeria.html">Galería</a></li>
+			<li><a href="contacto.html">Contacta</a></li>
+			<li><a href="registro.html">Registro</a></li>
+		</ul>
+	</nav>
+	
+	<main>
+		<h2>Quién fue Luis Alberto Spinetta</h2>
+		<p>Luis Alberto Spinetta (Núñez, 23 de enero de 1950-Villa Urquiza, 8 de febrero de 2012) fue un músico, cantante, guitarrista, poeta, escritor, compositor y multinstrumentista argentino, considerado uno de los más importantes músicos de Argentina, Latinoamérica y del habla hispana por la complejidad instrumental, compositiva, lírica y poética de sus obras musicales, tanto en sus múltiples agrupaciones y como solista. El gobierno argentino estableció el 23 de enero de cada año como "Día Nacional del Músico" en conmemoración a su nacimiento, bajo la Ley 27.106.
+		<br />	
+		<br />
+		En sus años iniciales, Spinetta formaría diversas bandas de rock en las décadas de los 60 y 70 que serían muy influyentes e importantes en la evolución del rock nacional y latinoamericano, como lo serían Almendra, Pescado Rabioso e Invisible, introductoras de géneros como hard rock, blues, y rock progresivo en la escena musical argentina. Tras la disolución de Pescado Rabioso, pero usando aún el nombre de esa banda, editó Artaud (1973), considerado como el mejor disco de la historia del rock nacional argentino por la revista Rolling Stone. En los años siguientes pasaría a formar Banda Spinetta, Spinetta Jade y Spinetta y los Socios del Desierto donde incursionó en el jazz rock. Además, publicó álbumes solistas en los que incorpora sonidos de jazz, pop y música electrónica, como Téster de violencia (1988), Don Lucero (1989) y Pelusón of milk (1991). 
+
+		<br /> 
+		<br />
+		Durante la década de los 2000 editó sus últimos trabajos, y en 2008 lanzó su último álbum, Un mañana, a la par del recital Spinetta y las Bandas Eternas en 2009, donde celebró sus cuarenta años de trayectoria en un concierto de cinco horas y media ante 40 mil personas en el Estadio José Amalfitani.
+		<br />
+		<br />
+		Falleció en 2012 a los 62 años, a causa de un cáncer de pulmón provocado por su adicción al cigarrillo. Sus cenizas fueron esparcidas en Río de la Plata.</p>
+	</main>
+	<aside>
+		<figure>
+			<img src="img/vertical.jpeg" alt="guitarrista" />
+		</figure>
+		
+	</aside>
+
+	<footer>
+		<ul>
+			<li><a href="#">Quiénes somos</a></li>
+			<li><a href="#">Privacidad</a></li>
+		</ul>
+	</footer>	
+		
+	<form>
+		<fieldset>
+				<label>Usuario:</label>
+				<input type="text" autofocus required maxlength="8" pattern="^[a-zA-Z]\w{2,7}$" title="El usuario debe contener entre 3 y 8 caracteres" />
+			</fieldset>
+			<fieldset>
+				<label>Contraseña:</label>
+				<input type="password" name="pass" min="6"/>
+			</fieldset>
+			<button type="submit">Login</button>
+	</form>	
+	
+</body>
+</html>
